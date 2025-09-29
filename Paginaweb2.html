@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>618 Energy</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5; /* fondo gris de la página */
+            color: #333;
+        }
+
+        /* Header fijo con imagen y texto */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #1a1a1a;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 36px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        /* Imagen en el header */
+        header img {
+            height: 50px; /* ajusta el tamaño de la imagen */
+            margin-right: 15px; /* espacio entre imagen y texto */
+        }
+
+        /* Contenido debajo del header */
+        main {
+            padding: 120px 20px 20px; /* espacio para el header más grande */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        p {
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* Animaciones */
+        @keyframes aparecer {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes moverParticulas {
+            0% { transform: translate(0,0); }
+            100% { transform: translate(50px,50px); }
+        }
+
+        /* Sección Sobre la Empresa */
+        #sobre {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #00796b, #00bfa5); /* verde futurista */
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        #sobre .cuadro {
+            background-color: #004d40; /* verde más oscuro para el cuadro */
+            color: #fff;
+            padding: 40px;
+            width: 50%;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        #sobre .cuadro p {
+            font-size: 16px;
+            line-height: 1.8;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: aparecer 1s forwards 0.3s;
+        }
+
+        /* Partículas sutiles dentro del cuadro */
+        #sobre .cuadro::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 1%, transparent 1%);
+            background-size: 50px 50px;
+            animation: moverParticulas 10s linear infinite;
+            z-index: 0;
+        }
+
+        #sobre .cuadro * {
+            position: relative;
+            z-index: 1; /* texto sobre partículas */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de 618 Energy">
+        618 Energy
+    </header>
+    <main>
+<main>
+<main>
+
+    <!-- Sección Sobre la Empresa -->
+    <section id="sobre">
+        <div class="cuadro">
+            <h2 style="font-size: 32px; margin-bottom: 20px; letter-spacing: 2px;">Sobre la Empresa</h2>
+            <p>
+                618 Energy Groupp es una Pyme dedicada a brindar soluciones de energía solar accesible y escalable para empresas, naves industriales y desarrollos residenciales. Nuestro enfoque integral combina instalación profesional, asesoría completa y mantenimiento confiable, permitiendo a nuestros clientes ahorrar en costos de energía mientras contribuyen al cuidado del medio ambiente. Con sede en Durango, buscamos expandirnos a la región norte de México, convirtiéndonos en un referente en proyectos de energía limpia y sostenible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Valores -->
+    <section class="seccion-cuadros">
+        <div class="cuadro izquierda">
+            <h2>Valores</h2>
+            <p>
+                Integridad, compromiso y sostenibilidad son los pilares que guían cada proyecto de 618 Energy. Nos aseguramos de ofrecer soluciones confiables, responsables con el medio ambiente y siempre centradas en las necesidades de nuestros clientes.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Misión -->
+    <section class="seccion-cuadros">
+        <div class="cuadro derecha">
+            <h2>Misión</h2>
+            <p>
+                Nuestra misión es llevar energía limpia y accesible a empresas y hogares, optimizando el consumo energético y contribuyendo a un futuro más sostenible para Durango y el norte de México.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Visión -->
+    <section class="seccion-cuadros">
+        <div class="cuadro izquierda">
+            <h2>Visión</h2>
+            <p>
+                Convertirnos en líderes reconocidos en soluciones de energía solar, expandiendo nuestros servicios de manera innovadora y tecnológica, marcando un estándar de calidad y responsabilidad ambiental en la región.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección Por qué elegirnos -->
+    <section class="seccion-cuadros">
+        <div class="cuadro derecha">
+            <h2>Por qué elegirnos</h2>
+            <p>
+                Combinamos experiencia técnica, atención personalizada y compromiso ambiental. Con 618 Energy, nuestros clientes ahorran en costos de energía mientras contribuyen a un planeta más limpio.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<style>
+    /* Estilos generales para los cuadros alternados */
+    .seccion-cuadros {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background: linear-gradient(135deg, #00796b, #00bfa5); /* fondo verde degradado */
+        padding: 50px 20px;
+        min-height: 80vh;
+    }
+
+    .cuadro {
+        background-color: #004d40; /* fondo verde oscuro del cuadro */
+        color: #fff;
+        padding: 40px;
+        width: 45%;
+        border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: aparecer 1s forwards 0.3s;
+    }
+
+    /* Alternar posición izquierda/derecha */
+    .cuadro.izquierda {
+        margin-right: auto;
+    }
+
+    .cuadro.derecha {
+        margin-left: auto;
+    }
+
+    /* Animaciones de aparición */
+    @keyframes aparecer {
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Partículas sutiles dentro de los cuadros */
+    .cuadro::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.05) 1%, transparent 1%);
+        background-size: 50px 50px;
+        animation: moverParticulas 10s linear infinite;
+        z-index: 0;
+    }
+
+    .cuadro * {
+        position: relative;
+        z-index: 1; /* texto sobre partículas */
+    }
+
+    @keyframes moverParticulas {
+        0% { transform: translate(0,0); }
+        100% { transform: translate(50px,50px); }
+    }
+
+    /* Responsive para móviles */
+    @media screen and (max-width: 768px) {
+        .cuadro {
+            width: 90%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+</style>
